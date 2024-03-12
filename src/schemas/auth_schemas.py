@@ -1,23 +1,28 @@
-from pydantic import BaseModel, ConfigDict
-from src.schemas.user_schemas import UsersResponse
-
+from pydantic import BaseModel, EmailStr
 
 class UserLogin(BaseModel):
-    model_config = ConfigDict(from_attributes=True)
     login: str
     password: str
-
 
 class TokenData(BaseModel):
     usr_login: str | None = None
 
+class UserIn(BaseModel):
+    login: str
+    password: str
+    email: EmailStr
+    name: str
+    client_id: int
+    role_id: int
+    status: str
+
+class UserOut(BaseModel):
+    id: int
+    login: str
+    email: EmailStr
+    name: str
 
 class AccessToken(BaseModel):
     access_token: str
     token_type: str
-    user: UsersResponse
-
-
-class TokenData(BaseModel):
-    model_config = ConfigDict(from_attributes=True)
-    usr_login: str | None = None
+    user: UserOut

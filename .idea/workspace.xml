@@ -75,7 +75,7 @@
     "Python.main.executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
+    "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -190,7 +190,7 @@
       <workItem from="1710035599187" duration="601000" />
       <workItem from="1710086456793" duration="34000" />
       <workItem from="1710115612763" duration="1072000" />
-      <workItem from="1710117660987" duration="11575000" />
+      <workItem from="1710117660987" duration="12173000" />
     </task>
     <servers />
   </component>
